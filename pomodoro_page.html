@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constellations</title>
+    <link href="assignment_1_style.css" rel="stylesheet"/>
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style_pomodoro_page.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-center" href="main_page.html">･٭★☽St⚝r☾★٭･</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="astrology_page.html">Astrology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pomodoro_page.html">🛰Space Pomodoro🛰</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log In</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Courses
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="page1.html">Course: Northern Hemisphere Constellations</a>
+                            <a class="dropdown-item" href="page2.html">Course: Southern Hemisphere Constellations</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<section class="todosection">
+<div id="tod">
+    <br>
+    <h1>☽TODO List☾</h1>
+    <h6>Сlick twice to remove a task from the list</h6>
+    <div class="todo-container">
+        <input type="text" id="task" placeholder="Add a new task">
+        <button id="addButton" class="button-29" role="button">Add</button>
+       
+    </div>
+    <ul id="taskList"></ul>
+    <div id="confetti"></div>
+</div>
+
+</section>
+
+<section id="space"></section>
+<section id="space2"></section>
+<section id="space3"></section>
+
+<section class="timersection">
+    <div id="con">
+    
+
+        <div id="tabs">
+        <button onclick="setMode('work')" class="button-36" role="button">Work</button>
+        
+        <button onclick="setMode('break')" class="button-36" role="button">Break</button>
+        <button onclick="setMode('longBreak')" class="button-36" role="button">Long Break</button>
+        </div>
+
+        <div id="timer">25:00</div>
+
+        <div id="buttons">
+            <button onclick="startTimer()" class="button-36" role="button">Start</button>
+            <button onclick="pauseTimer()" class="button-36" role="button">Pause</button>
+            <button onclick="resetTimer()" class="button-36" role="button">Reset</button>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <section>
+
+
+        <div class="footer-dark custom-bg-blue">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web-site</a></li>
+                                <li><a href="#">Application</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Informations</a></li>
+                                <li><a href="#">Astrology too</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>･٭★☽St⚝r☾★٭･ </h3>
+                            <p>You will find a lot of <strong>interespaceting</strong> things here</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright"> ©2023 ･٭★☽St⚝r☾★٭･    </p>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+</div>
+
+
+<script src="pomodoro.js"></script>
+</body>
+
+</html>

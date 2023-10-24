@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #080836 !important; 
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important; 
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    text-decoration: underline; 
+}
+body {
+    background-image: url('star_sky.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+
+    font-family: DejaVu Sans Mono, monospace;
+
+}
+.login-container {
+    background-color: rgba(3, 3, 18, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 160px;
+    text-emphasis-color: white;
+}
+ 
+#sizepinlogin{
+    font-size: 12px;
+}
+
+
+@media screen {
+    
+}
