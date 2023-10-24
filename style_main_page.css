@@ -238,3 +238,8 @@ p{
     border: 1px solid rgb(220, 238, 253);
     border-top: none;
   }
+
+
+  .card-body p{
+    color:#040422;
+  }
