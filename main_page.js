@@ -60,5 +60,69 @@ function openCity(evt, cityName) {
 
 
 
+// --------------------------------------------------------------
 
+
+const canvas = document.getElementById("saturnCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Saturn properties
+      let saturnX = canvas.width / 2;
+      let saturnY = canvas.height / 2;
+      const saturnRadius = 50;
+      const ringWidth = 10;
+      const ringDistance = 20;
+
+      // Animation properties
+      let angle = 0;
+
+      function drawSaturn() {
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw Saturn at its current position
+        ctx.beginPath();
+        ctx.arc(saturnX, saturnY, saturnRadius, 0, Math.PI * 2);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+        ctx.closePath();
+
+        // Draw Saturn's rings
+        ctx.beginPath();
+        ctx.arc(
+          saturnX,
+          saturnY,
+          saturnRadius + ringDistance,
+          0,
+          Math.PI * 2
+        );
+        ctx.lineWidth = ringWidth;
+        ctx.strokeStyle = "brown";
+        ctx.stroke();
+        ctx.closePath();
+
+        // Rotate Saturn
+        ctx.translate(saturnX, saturnY);
+        ctx.rotate((angle * Math.PI) / 180);
+        ctx.translate(-saturnX, -saturnY);
+        angle += 0.5;
+
+        requestAnimationFrame(drawSaturn);
+      }
+
+      function moveSaturn() {
+        // Randomly change Saturn's position within the canvas
+        saturnX = Math.random() * (canvas.width - 2 * saturnRadius) + saturnRadius;
+        saturnY = Math.random() * (canvas.height - 2 * saturnRadius) + saturnRadius;
+      }
+
+      drawSaturn();
+
+      const moveButton = document.getElementById("moveSaturnButton");
+      moveButton.addEventListener("click", moveSaturn);
+
+
+
+      // ----------------------------------------------------------
+      
 
